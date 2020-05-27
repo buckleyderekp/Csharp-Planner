@@ -15,7 +15,7 @@ namespace Planner
             };
             FiveOneTwoEighth.Construct();
             FiveOneTwoEighth.Purchase("Thomas Long");
-            Console.Write(FiveOneTwoEighth.showAddress());
+            FiveOneTwoEighth.BuildingReport();
         }
     }
 }

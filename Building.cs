@@ -43,5 +43,14 @@ namespace Planner
         {
             return _address;
         }
+        public void BuildingReport()
+        {
+            Console.WriteLine(this._address);
+            Console.WriteLine("--------------");
+            Console.WriteLine($"Designed by {this._designer}");
+            Console.WriteLine($"Constructed on {this._dateConstructed}");
+            Console.WriteLine($"Owned by {this._owner}");
+            Console.WriteLine($"{this.Volume} cubic meters of space");
+        }
     }
 }
