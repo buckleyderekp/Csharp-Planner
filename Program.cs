@@ -15,7 +15,25 @@ namespace Planner
             };
             FiveOneTwoEighth.Construct();
             FiveOneTwoEighth.Purchase("Thomas Long");
-            FiveOneTwoEighth.BuildingReport();
+
+            Building OneZeroTwoEasy = new Building("102 Easy Street")
+            {
+                Stories = 10,
+                Width = 7,
+                Depth = 8,
+            };
+            OneZeroTwoEasy.Construct();
+            OneZeroTwoEasy.Purchase("Kristen Howton");
+
+            City Derekville = new City("Derekville");
+
+            Derekville.AddBuilding(FiveOneTwoEighth);
+            Derekville.AddBuilding(OneZeroTwoEasy);
+
+            foreach (Building building in Derekville.Buildings())
+            {
+                building.BuildingReport();
+            }
         }
     }
 }
